@@ -1,9 +1,10 @@
 import Home from './components/Home'
+import OurTeam from './components/OurTeam'
 
 function App() {
   return (
     <>
-      <Home />
+      <OurTeam />
       {/* manggilnya di sini pak */}
     </>
   )
