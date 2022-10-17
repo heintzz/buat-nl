@@ -46,8 +46,8 @@ const object = [
   {
     department: 'President & Vice President',
     profile: [
-      { name: 'Samantha M.P', position: 'President', source: sam },
-      { name: 'Christian Ale', position: 'Vice President', source: ale },
+      { name: 'Samantha M.P', role: 'President', source: sam },
+      { name: 'Christian Ale', role: 'Vice President', source: ale },
     ],
   },
 ]

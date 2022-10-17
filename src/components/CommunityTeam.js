@@ -34,16 +34,16 @@ const firstObj = [
     department: 'Web Development',
 
     profile: [
-      { name: 'Aldo', source: sam },
-      { name: 'Jovian', source: ale },
+      { name: 'Aldo', source: sam, role: 'President' },
+      { name: 'Jovian', source: ale, role: 'Vice President' },
     ],
     ornament: bullet,
   },
   {
     department: 'Competitive Programming',
     profile: [
-      { name: 'Harry', source: sam },
-      { name: 'Wiweka', source: ale },
+      { name: 'Harry', source: sam, role: 'President' },
+      { name: 'Wiweka', source: ale, role: 'Vice President' },
     ],
     style: 'md:mt-[255px] xl:mt-[175px]',
     ornament: circle,
@@ -53,8 +53,8 @@ const firstObj = [
   {
     department: 'Application Development',
     profile: [
-      { name: 'Firdaus', source: sam },
-      { name: 'Hasan', source: ale },
+      { name: 'Firdaus', source: sam, role: 'President' },
+      { name: 'Hasan', source: ale, role: 'Vice President' },
     ],
     ornament: circle,
     ornamentStyle: 'absolute -top-10 -z-[1] -left-16 w-[60%] md:hidden',
@@ -65,8 +65,8 @@ const secondObj = [
   {
     department: 'Data Science & Analytics',
     profile: [
-      { name: 'Ricky', source: sam },
-      { name: 'Juang', source: ale },
+      { name: 'Ricky', source: sam, role: 'President' },
+      { name: 'Juang', source: ale, role: 'Vice President' },
     ],
     ornament: triangle,
     ornamentStyle: 'absolute top-0 left-20 w-[50%] -z-[1]',
@@ -74,8 +74,8 @@ const secondObj = [
   {
     department: 'User Experience',
     profile: [
-      { name: 'Tyara', source: sam },
-      { name: 'Annisa', source: ale },
+      { name: 'Tyara', source: sam, role: 'President' },
+      { name: 'Annisa', source: ale, role: 'Vice President' },
     ],
     style: 'md:mt-[255px] xl:mt-[175px]',
     ornament: bullet,
@@ -83,8 +83,8 @@ const secondObj = [
   {
     department: 'Linux & Networking',
     profile: [
-      { name: 'Farel', source: sam },
-      { name: 'Novaldy', source: ale },
+      { name: 'Farel', source: sam, role: 'President' },
+      { name: 'Novaldy', source: ale, role: 'Vice President' },
     ],
     ornament: rectangle,
     ornamentStyle: 'absolute -top-10 md:-top-40 left-20 -z-[1] w-[60%]',

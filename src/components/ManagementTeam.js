@@ -28,9 +28,9 @@ const object = [
   {
     department: 'Public Relation',
     profile: [
-      { name: "Nisa'", source: ale },
-      { name: 'Sagara', source: sam },
-      { name: 'Byan', source: ale },
+      { name: 'Sagara', role: 'Head', source: sam },
+      { name: "Nisa'", role: 'Member', source: ale },
+      { name: 'Byan', role: 'Member', source: ale },
     ],
     ornament: square,
     ornamentStyle: 'absolute -bottom-12 left-20 -z-[1] max-w-[137px]',
@@ -39,9 +39,9 @@ const object = [
   {
     department: 'Creative Media',
     profile: [
-      { name: 'Arifah', source: ale },
-      { name: 'Fajar', source: sam },
-      { name: 'Daniyal', source: ale },
+      { name: 'Arifah', role: 'Head', source: ale },
+      { name: 'Fajar', role: 'Member', source: sam },
+      { name: 'Daniyal', role: 'Member', source: ale },
     ],
     ornament: bullet,
     ornamentStyle:
@@ -51,10 +51,10 @@ const object = [
   {
     department: 'Administration',
     profile: [
-      { name: 'Aku', source: ale },
-      { name: 'Kamu', source: sam },
-      { name: 'Dia', source: ale },
-      { name: 'Doi', source: sam },
+      { name: 'Gerrit', role: 'Head', source: ale },
+      { name: 'Talitha', role: 'Member', source: sam },
+      { name: 'Dhiyaa', role: 'Member', source: ale },
+      { name: 'Anisa', role: 'Member', source: sam },
     ],
     ornament: squareFull,
     ornamentStyle:

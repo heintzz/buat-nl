@@ -34,10 +34,10 @@ export default function PersonalTeam({
                     className="rounded-full hover:cursor-pointer"
                   />
                   <div
-                    className="text-center absolute top-0 bg-black/70 w-full h-full rounded-full flex justify-center items-center text-white opacity-0 hover:opacity-100 hover:cursor-pointer"
+                    className="text-center px-1 absolute top-0 bg-black/70 w-full h-full rounded-full flex justify-center items-center text-white opacity-0 hover:opacity-100 hover:cursor-pointer"
                     style={{ transition: 'all 0.3s' }}
                   >
-                    {profile.position}
+                    {profile.role}
                   </div>
                 </div>
               </div>
