@@ -9,11 +9,11 @@ export default function PersonalTeam({
   additionalFlex,
 }) {
   const titleStyle =
-    'mx-auto mb-5 max-w-[320px] rounded-full bg-white text-[#B82534] font-semibold p-2 text-center text-md lg:text-lg'
+    'mx-auto mb-5 w-fit px-5 py-2 rounded-full bg-white text-[#B82534] font-semibold text-center text-md lg:text-lg'
   const containerFlex = `flex ${
     additionalFlex || ''
   } max-w-[100vw] gap-x-4 lg:gap-x-10 gap-y-5`
-  const responsiveContainer = 'w-[145px] md:w-[120px] lg:w-[150px] xl:w-[160px]'
+  const responsiveContainer = 'w-[145px] md:w-[120px] lg:w-[150px] xl:w-[170px] 2xl:min-w-[220px]'
   const containerWFull = 'relative w-full pt-[100%]'
   const circleProfile =
     'absolute left-0 top-0 h-full w-full rounded-full border-[12px] border-[#ED707C] bg-white text-[#B82534] font-semibold'
@@ -25,7 +25,7 @@ export default function PersonalTeam({
       <div className={containerFlex}>
         {profile.map((profile, idx) => {
           return (
-            <div className={responsiveContainer} key={idx}>
+            <div className={`${responsiveContainer} adjustScreen`} key={idx}>
               <div className={containerWFull}>
                 <div className={circleProfile}>
                   <img

@@ -12,7 +12,7 @@ import sam from '../images/sam.jpg'
 export default function CommunityTeam() {
   return (
     <div className="my-30 mx-auto max-w-[2160px] sm:px-10">
-      <h2 className="my-20 px-2 text-center text-4xl sm:text-5xl xl:text-6xl text-white font-semibold">
+      <h2 className="sm:my-20 my-10 px-2 text-center text-4xl sm:text-5xl xl:text-6xl text-white font-semibold">
         Community Team
       </h2>
       <div className="grid gap-y-16 md:grid-cols-3">

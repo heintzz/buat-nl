@@ -22,20 +22,14 @@ export default function Leader() {
       <img
         src={triangle}
         alt="triangle-ornament"
-        className={'absolute top-60 right-32 -z-[1] w-40 -rotate-90'}
+        className={'absolute top-60 right-32 -z-[1] w-36 md:w-40 -rotate-90'}
       />
+
       <img
         src={squareFull}
         alt="squarefull-ornament"
         className={
-          'absolute hidden md:block -bottom-48 right-[400px] -z-[1] w-[50px]'
-        }
-      />
-      <img
-        src={squareFull}
-        alt="squarefull-ornament"
-        className={
-          'absolute hidden md:block -bottom-20 left-80 -z-[1] w-[50px]'
+          'absolute hidden md:block -bottom-16 left-80 -z-[1] w-[50px]'
         }
       />
     </div>
