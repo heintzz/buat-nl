@@ -1,12 +1,20 @@
 import React from 'react'
 import PersonalTeam from './PersonalTeam'
 
-import square from '../images/square.svg'
-import squareFull from '../images/square-full.svg'
-import bullet from '../images/grid.svg'
+// import square from '../images/square.svg'
+// import squareFull from '../images/square-full.svg'
+// import bullet from '../images/grid.svg'
 
-import ale from '../images/ale.jpg'
-import sam from '../images/sam.jpg'
+import sagara from '../images/prof-pics/sagara.png'
+import nisa from '../images/prof-pics/nisa.png'
+import byan from '../images/prof-pics/byan.png'
+import arifah from '../images/prof-pics/arifah.png'
+import fajar from '../images/prof-pics/fajar.png'
+import daniyal from '../images/prof-pics/daniyal.png'
+import gerrit from '../images/prof-pics/gerrit.png'
+import talitha from '../images/prof-pics/talitha.png'
+import dhiyaa from '../images/prof-pics/dhiyaa.png'
+import anisa from '../images/prof-pics/anisa.png'
 
 export default function ManagementTeam() {
   return (
@@ -28,37 +36,37 @@ const object = [
   {
     department: 'Public Relation',
     profile: [
-      { name: 'Sagara', role: 'Head', source: sam },
-      { name: "Nisa'", role: 'Member', source: ale },
-      { name: 'Byan', role: 'Member', source: ale },
+      { name: 'Sagara', role: 'Head', source: sagara },
+      { name: "Nisa'", role: 'Member', source: nisa },
+      { name: 'Byan', role: 'Member', source: byan },
     ],
-    ornament: square,
-    ornamentStyle: 'absolute -bottom-12 left-20 -z-[1] max-w-[137px]',
+    // ornament: square,
+    // ornamentStyle: 'absolute -bottom-12 left-20 -z-[1] max-w-[137px]',
     additionalFlex: additionalFlex,
   },
   {
     department: 'Creative Media',
     profile: [
-      { name: 'Arifah', role: 'Head', source: ale },
-      { name: 'Fajar', role: 'Member', source: sam },
-      { name: 'Daniyal', role: 'Member', source: ale },
+      { name: 'Arifah', role: 'Head', source: arifah },
+      { name: 'Fajar', role: 'Member', source: fajar },
+      { name: 'Daniyal', role: 'Member', source: daniyal },
     ],
-    ornament: bullet,
-    ornamentStyle:
-      'absolute -bottom-12 right-20 -z-[1] max-w-[157px] md:max-w-[237px]',
+    // ornament: bullet,
+    // ornamentStyle:
+      // 'absolute -bottom-12 right-20 -z-[1] max-w-[157px] md:max-w-[237px]',
     additionalFlex: additionalFlex,
   },
   {
     department: 'Administration',
     profile: [
-      { name: 'Gerrit', role: 'Head', source: ale },
-      { name: 'Talitha', role: 'Member', source: sam },
-      { name: 'Dhiyaa', role: 'Member', source: ale },
-      { name: 'Anisa', role: 'Member', source: sam },
+      { name: 'Gerrit', role: 'Head', source: gerrit },
+      { name: 'Dhiyaa', role: 'Member', source: dhiyaa },
+      { name: 'Anisa', role: 'Member', source: anisa },
+      { name: 'Talitha', role: 'Member', source: talitha },
     ],
-    ornament: squareFull,
-    ornamentStyle:
-      'absolute hidden md:block -bottom-20 -left-20 -z-[1] max-w-[57px]',
+    // ornament: squareFull,
+    // ornamentStyle:
+      // 'absolute hidden md:block -bottom-20 -left-20 -z-[1] max-w-[57px]',
     additionalFlex: additionalFlex,
   },
 ]

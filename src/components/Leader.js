@@ -1,20 +1,20 @@
 import React from 'react'
 import PersonalTeam from './PersonalTeam'
 
-import bullet from '../images/grid.svg'
-import squareFull from '../images/square-full.svg'
-import triangle from '../images/triangle.svg'
+// import bullet from '../images/grid.svg'
+// import squareFull from '../images/square-full.svg'
+// import triangle from '../images/triangle.svg'
 
-import ale from '../images/ale.jpg'
-import sam from '../images/sam.jpg'
+import ale from '../images/prof-pics/ale.png'
+import sam from '../images/prof-pics/sam.png'
 
 export default function Leader() {
   return (
-    <div className="mt-10 flex justify-center relative">
+    <div className="flex justify-center">
       {object.map((obj, idx) => (
         <PersonalTeam {...obj} key={idx} />
       ))}
-      <img
+      {/* <img
         src={bullet}
         alt="bullet-ornament"
         className={'absolute top-10 left-0 -z-[1] w-40'}
@@ -31,7 +31,7 @@ export default function Leader() {
         className={
           'absolute hidden md:block -bottom-16 left-80 -z-[1] w-[50px]'
         }
-      />
+      /> */}
     </div>
   )
 }

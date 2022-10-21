@@ -8,10 +8,24 @@ body {
   font-family: 'Poppins', 'Fira Sans', 'sans serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #b82534;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bg-pattern {
+  background: url(./images/pattern.png), rgba(184, 37, 52, 1);
+}
+
+.bg-gradient-mtt {
+  background-image: linear-gradient(
+      90deg,
+      rgba(184, 37, 52, 1) 0%,
+      rgba(184, 37, 52, 0.33) 26.98%,
+      rgba(255, 255, 255, 0) 63.45%
+    ),
+    url(./images/meet-the-team.png);
+  background-repeat: 'no-repeat';
 }

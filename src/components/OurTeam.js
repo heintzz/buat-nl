@@ -5,7 +5,7 @@ import CommunityTeam from './CommunityTeam'
 
 export default function OurTeam() {
   return (
-    <div>
+    <div className='bg-pattern py-20'>
       <Leader />
       <ManagementTeam />
       <CommunityTeam />
