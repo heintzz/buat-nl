@@ -11,7 +11,8 @@ export default function PersonalTeam({
   const containerFlex = `flex ${
     additionalFlex || ''
   } max-w-[100vw] gap-x-4 lg:gap-x-10 gap-y-5`
-  const responsiveContainer = 'w-[145px] md:w-[120px] lg:w-[150px] xl:w-[170px] 2xl:min-w-[220px]'
+  const responsiveContainer =
+    'w-[145px] md:w-[120px] lg:w-[150px] xl:w-[170px] 2xl:w-[190px]'
   const containerWFull = 'relative w-full pt-[100%]'
   const circleProfile =
     'absolute left-0 top-0 h-full w-full rounded-full border-[12px] border-[#ED707C] text-[#B82534] font-semibold'

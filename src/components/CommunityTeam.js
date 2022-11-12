@@ -21,7 +21,7 @@ import novaldy from '../images/prof-pics/novaldy.png'
 
 export default function CommunityTeam() {
   return (
-    <div className="mt-30 mx-auto max-w-[2160px] sm:px-10">
+    <div className="mx-auto max-w-[2160px] sm:px-10">
       <h2 className="sm:my-20 my-10 px-2 text-center text-4xl sm:text-5xl xl:text-6xl text-white font-semibold">
         Community Team
       </h2>
