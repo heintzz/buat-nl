@@ -12,6 +12,8 @@ import NCPC from './components/NCPC'
 import NLNC from './components/NLNC'
 import NUXC from './components/NUXC'
 import NDDC from './components/NDDC'
+import Footer from './components/Footer'
+import Benefits from './components/Benefits'
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
               <MeetTheTeam />
               <Community />
               <WhatWeDo />
+              <Benefits />
+              <Footer />
             </>
           }
         />

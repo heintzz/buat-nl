@@ -5,7 +5,7 @@ import { Pagination, Keyboard } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-import robot from '../images/robot.png'
+import template from '../images/template-showcase.png'
 
 export default function Showcase({ color }) {
   return (
@@ -17,7 +17,6 @@ export default function Showcase({ color }) {
         <h2 className="text-center text-white text-4xl sm:text-5xl xl:text-6xl font-semibold">
           Showcase Project
         </h2>
-        <div className="mx-auto mt-3 bg-white rounded-lg h-2 w-[50%]"></div>
       </div>
       <Swiper
         modules={[Pagination, Keyboard]}
@@ -30,12 +29,19 @@ export default function Showcase({ color }) {
         spaceBetween={10}
         breakpoints={breakpoints}
       >
-        {[1, 2, 3, 4, 5].map((n) => {
+        {[1, 2, 3, 4].map((n) => {
           return (
             <SwiperSlide className="py-5 flex flex-col items-center" key={n}>
-              <div className="flex flex-col items-center  bg-white rounded-2xl gap-y-5 w-full mb-10 p-5 max-w-[250px] sm:max-w-[300px] hover:cursor-pointer hover:scale-[1.05] transition-all ease-in duration-300">
-                <img src={robot} alt="hi" className="rounded-lg" />
-                <p className="text-xl font-semibold">Judul Project</p>
+              <div className="flex flex-col items-center  bg-white rounded-2xl gap-y-5 w-full mb-10 p-5 max-w-[250px] sm:max-w-[300px] h-[400px] hover:cursor-pointer hover:scale-[1.05] transition-all ease-in duration-300">
+                <img
+                  src={template}
+                  alt="template"
+                  className="rounded-lg"
+                  loading="lazy"
+                />
+                <p className="text-xl font-semibold">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
               </div>
             </SwiperSlide>
           )

@@ -36,7 +36,7 @@ export default function FindIT() {
       <img
         src={header}
         alt="separate"
-        className="100vw hidden rotate sm:block"
+        className="w-[100vw] hidden rotate sm:block"
       />
       <div className="header-findit rotate h-24 sm:hidden"></div>
     </div>

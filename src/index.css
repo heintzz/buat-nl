@@ -38,7 +38,6 @@ code {
   background-repeat: no-repeat;
 }
 
-
 .bg-separator-wwd {
   background-image: url('./images/separatorWWD.png');
   background-repeat: repeat;
@@ -56,6 +55,12 @@ code {
   background-repeat: no-repeat;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
+}
+
+.footer-bf {
+  background-image: url(./images/footer-bf.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .footer-mtt {
