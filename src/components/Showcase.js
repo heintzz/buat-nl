@@ -7,9 +7,12 @@ import 'swiper/css/pagination'
 
 import robot from '../images/robot.png'
 
-export default function Showcase() {
+export default function Showcase({ color }) {
   return (
-    <div className="mx-auto py-10 md:py-32 showcase bg-[#B82534]">
+    <div
+      className={`mx-auto py-10 md:py-20 showcase`}
+      style={{ backgroundColor: `${color}` }}
+    >
       <div className="w-fit mx-auto mb-10">
         <h2 className="text-center text-white text-4xl sm:text-5xl xl:text-6xl font-semibold">
           Showcase Project
@@ -27,12 +30,12 @@ export default function Showcase() {
         spaceBetween={10}
         breakpoints={breakpoints}
       >
-        {['FindIT', 'After Hours Talk', 'Internal Workshop'].map((name) => {
+        {[1, 2, 3, 4, 5].map((n) => {
           return (
-            <SwiperSlide className="py-5 flex flex-col items-center">
-              <div className="flex flex-col items-center  bg-white rounded-2xl gap-y-5 w-full mb-10 p-5 max-w-[250px] sm:max-w-[300px]">
-                <img src={robot} alt="maskot find it" loading="lazy" />
-                <p className="text-xl">{name}</p>
+            <SwiperSlide className="py-5 flex flex-col items-center" key={n}>
+              <div className="flex flex-col items-center  bg-white rounded-2xl gap-y-5 w-full mb-10 p-5 max-w-[250px] sm:max-w-[300px] hover:cursor-pointer hover:scale-[1.05] transition-all ease-in duration-300">
+                <img src={robot} alt="hi" className="rounded-lg" />
+                <p className="text-xl font-semibold">Judul Project</p>
               </div>
             </SwiperSlide>
           )

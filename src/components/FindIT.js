@@ -1,28 +1,44 @@
 import React from 'react'
 
+import header from '../images/header-findit.png'
+
+import ESC from './findit/ESC'
+import NW from './findit/NW'
+import HACK from './findit/HACK'
+import DAS from './findit/DAS'
+import CP from './findit/CP'
+import CTF from './findit/CTF'
+
 export default function FindIT() {
   const buttonStyle =
-    'w-fit px-5 py-2 lg:px-10 lg:py-5 rounded-full bg-white text-[#B82534] font-semibold text-center text-lg lg:text-3xl mx-auto'
+    'w-fit px-5 py-2 sm:px-10 sm:py-5 rounded-full bg-white text-[#B82534] font-semibold text-center text-xl sm:text-3xl mx-auto hover:text-white hover:bg-red-800'
 
   return (
-    <div className="bg-[#B82534]">
-      <div className="bg-pattern-header h-20"></div>
-      <div className="px-5 sm:px-10 lg:px-20 py-20 gap-y-20 md:py-40 md:gap-y-40 text-white mx-auto max-w-[1280px] flex flex-col font-semibold text-4xl md:text-5xl lg:text-6xl">
-        <p>National Webinar</p>
-        <p className="self-end ">Hackathon</p>
-        <div className="self-start md:text-center max-w-[180px] md:max-w-[220px] lg:max-w-[270px]">
-          <p>Data Analytics</p>
-        </div>
-        <div className="self-end text-end md:text-center max-w-[260px] md:max-w-[340px] lg:max-w-[425px]">
-          <p>Competitive Programming</p>
-        </div>
-        <p className=" md:text-center self-start">Capture The Flag</p>
-        <div className="self-end text-end md:text-center max-w-[250px] md:max-w-[300px] lg:max-w-[400px]">
-          <p>E-Sport Competition</p>
-        </div>
-        <button className={buttonStyle}>Official Website</button>
+    <div className="bg-[#b82534]">
+      <img src={header} alt="separate" className="100vw hidden sm:block" />
+      <div className="header-findit h-24 sm:hidden"></div>
+      <div className="px-10 md:px-20 pt-20 pb-10 gap-y-20 md:pt-40 md:gap-y-28 text-white mx-auto max-w-[1280px] flex flex-col font-semibold text-2xl md:text-3xl lg:text-4xl">
+        <NW />
+        <HACK />
+        <DAS />
+        <CP />
+        <CTF />
+        <ESC />
+        <a
+          className={buttonStyle}
+          href="https://find-it.id/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Official Website
+        </a>
       </div>
-      <div className="bg-pattern-header w-screen h-20"></div>
+      <img
+        src={header}
+        alt="separate"
+        className="100vw hidden rotate sm:block"
+      />
+      <div className="header-findit rotate h-24 sm:hidden"></div>
     </div>
   )
 }

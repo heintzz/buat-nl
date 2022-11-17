@@ -16,7 +16,15 @@ code {
 }
 
 .bg-pattern {
-  background: url(./images/pattern.png), rgba(184, 37, 52, 1);
+  background-image: url('../src/images/pattern.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-pattern-community {
+  background: url(./images/pattern-community.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg-gradient-mtt {
@@ -27,35 +35,64 @@ code {
       rgba(255, 255, 255, 0) 100%
     ),
     url(./images/meet-the-team.webp);
-  background-repeat: 'no-repeat';
+  background-repeat: no-repeat;
 }
 
-.bg-pattern-header {
-  background-image: url(./images/pattern-header.png);
-  background-size: cover;
+
+.bg-separator-wwd {
+  background-image: url('./images/separatorWWD.png');
   background-repeat: repeat;
+}
+
+.header-findit {
+  background-image: url(./images/header-findit.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-findit-rotate {
+  background-image: url(./images/header-findit.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+
+.footer-mtt {
+  background-image: url(./images/footer-mtt.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
 }
 
 .shadow-slider {
   box-shadow: 10px 10px #404143, 20px 20px #b82534;
 }
 
+.shadow-community {
+  box-shadow: 7px 7px rgba(184, 37, 52, 1);
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   top: unset !important;
-  bottom: 22.5px;
+  bottom: 15px;
   color: #b82534 !important;
 }
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: 10% !important;
+  right: 30px !important;
 }
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: unset !important;
-  right: 20% !important;
+  right: 95px !important;
 }
 
 .showcase .swiper-pagination-bullet {
@@ -64,15 +101,33 @@ code {
   border-radius: 5px;
 }
 
+.swiper-button-next::after {
+  content: url('../src/images/swiper-next.svg') !important;
+}
+
+.swiper-button-prev::after {
+  content: url('../src/images/swiper-prev.svg') !important;
+}
+
+.skew {
+  background-color: white;
+  color: #b82534;
+  -ms-transform: skew(-15deg);
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  padding: 15px 35px;
+  box-shadow: -10px 10px 0px #000000, -17px 17px 0px rgb(184, 37, 52),
+    -21px 21px 0px rgba(255, 255, 255, 1);
+}
+
+.unskew {
+  -ms-transform: skew(15deg);
+  -webkit-transform: skew(15deg);
+  transform: skew(15deg);
+}
+
 @media only screen and (max-width: 320px) {
   .adjustScreen {
     max-width: 120px;
-  }
-}
-
-@media only screen and (min-width: 1224px) {
-  .bg-pattern-header {
-    background-size: contain;
-    background-repeat: repeat-x;
   }
 }

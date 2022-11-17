@@ -1,38 +1,30 @@
 import React from 'react'
 import PersonalTeam from './PersonalTeam'
 
-// import bullet from '../images/grid.svg'
-// import squareFull from '../images/square-full.svg'
-// import triangle from '../images/triangle.svg'
-
 import ale from '../images/prof-pics/ale.png'
 import sam from '../images/prof-pics/sam.png'
 
+import ornament from '../images/ornament-leader.png'
+
 export default function Leader() {
   return (
-    <div className="flex justify-center">
-      {object.map((obj, idx) => (
-        <PersonalTeam {...obj} key={idx} />
-      ))}
-      {/* <img
-        src={bullet}
-        alt="bullet-ornament"
-        className={'absolute top-10 left-0 -z-[1] w-40'}
-      />
-      <img
-        src={triangle}
-        alt="triangle-ornament"
-        className={'absolute top-60 right-32 -z-[1] w-36 md:w-40 -rotate-90'}
-      />
-
-      <img
-        src={squareFull}
-        alt="squarefull-ornament"
-        className={
-          'absolute hidden md:block -bottom-16 left-80 -z-[1] w-[50px]'
-        }
-      /> */}
-    </div>
+    <>
+      <div className="flex justify-center relative z-10">
+        {object.map((obj, idx) => (
+          <PersonalTeam {...obj} key={idx} />
+        ))}
+        <img
+          src={ornament}
+          alt="leader ornament"
+          className="absolute top-[30%] -left-20 sm:-left-5 -z-10"
+        />
+        <img
+          src={ornament}
+          alt="leader ornament"
+          className="absolute hidden lg:block top-[30%] -right-5 scale-[-1] -z-10"
+        />
+      </div>
+    </>
   )
 }
 
