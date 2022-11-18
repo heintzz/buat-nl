@@ -21,7 +21,7 @@ const whatWeDo = [
   },
   {
     name: '#AFTER HOURS TALK🎙️',
-    desc: 'This activity is usually carried out by inviting speakers from the industrial world. By joining the Night Login, you will be introduced to the preparation for a career in the industrial world. Unlike the Internal Workshop, AHT bridges those of you who are outside the Night Login to be able to study together.',
+    desc: 'This activity is usually carried out by inviting speakers from the industrial world. Unlike the Internal Workshop, AHT bridges those of you who are outside the Night Login to be able to study together.',
   },
 ]
 export default function WhatWeDo() {
