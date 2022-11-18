@@ -39,7 +39,10 @@ export default function Benefits() {
         <div className="pt-10 md:pt-20 px-5 mx-auto flex flex-col gap-y-10 sm:grid sm:grid-cols-2 xl:flex xl:flex-row xl:max-w-[1280px] xl:gap-x-10">
           {benefits.map((benefit) => {
             return (
-              <div className="w-[90%] p-5 bg-white shadow-xl rounded-lg mx-auto flex flex-col items-center gap-y-5">
+              <div
+                className="w-[90%] p-5 bg-white rounded-lg mx-auto flex flex-col items-center gap-y-5"
+                key={benefit.name}
+              >
                 <img
                   src={benefit.img}
                   alt={benefit.name}

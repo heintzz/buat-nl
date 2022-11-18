@@ -14,7 +14,7 @@ export default function Showcase({ color }) {
       style={{ backgroundColor: `${color}` }}
     >
       <div className="w-fit mx-auto mb-10">
-        <h2 className="text-center text-white text-4xl sm:text-5xl xl:text-6xl font-semibold">
+        <h2 className="text-center px-5 text-white text-4xl sm:text-5xl xl:text-6xl font-semibold">
           Showcase Project
         </h2>
       </div>

@@ -1,9 +1,10 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Keyboard } from 'swiper'
+import { Navigation, Keyboard, Autoplay } from 'swiper'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
+// import 'swiper/css/autoplay'
 import { Link } from 'react-router-dom'
 
 const buttonStyle =
@@ -26,20 +27,20 @@ const whatWeDo = [
 export default function WhatWeDo() {
   return (
     <div id="what-we-do">
-      <div className="bg-separator-wwd w-screen h-[100px] mt-2"></div>
-      <div className="pt-10 pb-16 md:pt-36 md:pb-48 ">
+      <div className="pt-10 pb-16 md:pt-36 md:pb-48 bg-[#B82534]">
         <div className="w-fit mx-auto">
-          <h2 className="text-center text-[#B82534] text-4xl sm:text-5xl xl:text-6xl font-semibold">
+          <h2 className="text-center text-white text-4xl sm:text-5xl xl:text-6xl font-semibold">
             What We Do?
           </h2>
-          <div className="mx-auto mt-3 bg-[#B82534] rounded-lg h-2 w-[50%]"></div>
+          <div className="mx-auto mt-3 bg-white rounded-lg h-2 w-[50%]"></div>
         </div>
         <div className="pt-10 pl-2 pr-7 lg:px-0">
           <Swiper
-            modules={[Navigation, Keyboard]}
+            modules={[Navigation, Keyboard, Autoplay]}
             keyboard={{ enabled: true }}
+            // autoplay={true}
             navigation
-            className="h-100 max-w-[730px] shadow-slider  border-4 border-black "
+            className="h-100 max-w-[730px] shadow-slider  border-4 border-black bg-white"
           >
             {whatWeDo.map((event) => {
               const { name, desc } = event
@@ -65,7 +66,6 @@ export default function WhatWeDo() {
           </Swiper>
         </div>
       </div>
-      <div className="bg-separator-wwd w-screen h-[100px] mt-2"></div>
     </div>
   )
 }

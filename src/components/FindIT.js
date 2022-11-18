@@ -14,7 +14,7 @@ export default function FindIT() {
     'w-fit px-5 py-2 sm:px-10 sm:py-5 rounded-full bg-white text-[#B82534] font-semibold text-center text-xl sm:text-3xl mx-auto hover:text-white hover:bg-red-800'
 
   return (
-    <div className="bg-[#b82534] pt-16">
+    <div className="bg-[#b82534] pt-12">
       <img src={header} alt="separate" className="100vw hidden sm:block" />
       <div className="header-findit h-24 sm:hidden"></div>
       <div className="px-10 md:px-20 pt-20 pb-10 gap-y-20 md:pt-40 md:gap-y-28 text-white mx-auto max-w-[1280px] flex flex-col font-semibold text-2xl md:text-3xl lg:text-4xl">
