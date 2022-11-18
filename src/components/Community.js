@@ -53,7 +53,7 @@ export default function Community() {
         </h2>
         <div className="mx-auto mt-3 bg-[#B82534] rounded-lg h-2 w-[50%]"></div>
       </div>
-      <div className="mx-auto mt-10 max-w-[1280px] grid sm:grid-cols-2 gap-y-10 sm:gap-y-8 lg:gap-y-10 gap-x-10 md:gap-x-0 sm:p-5 ">
+      <div className="mx-auto mt-10 max-w-[1280px] grid sm:grid-cols-2 gap-y-10 sm:gap-y-8 lg:gap-y-10 gap-x-10 md:gap-x-0 sm:p-10 md:px-20">
         {object.map((obj, idx) => {
           const { name, src, nav } = obj
           return (
