@@ -46,7 +46,7 @@ const object = [
 
 export default function Community() {
   return (
-    <div className="py-10 md:py-32 bg-pattern-community">
+    <div className="py-10 md:py-32 bg-pattern-community" id="community">
       <div className="max-w-fit mx-auto">
         <h2 className="text-center text-[#B82534] text-4xl sm:text-5xl xl:text-6xl font-semibold">
           Community
@@ -57,7 +57,7 @@ export default function Community() {
         {object.map((obj, idx) => {
           const { name, src, nav } = obj
           return (
-            <Link to={nav} onClick={() => window.scrollTo(0, 0)}>
+            <Link to={nav} onClick={() => window.scrollTo(0, 0)} key={idx}>
               <div
                 className={`mx-auto ${
                   idx % 2 === 0 ? 'pr-5 pl-10' : 'pl-5 pr-10'

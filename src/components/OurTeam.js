@@ -7,7 +7,7 @@ import footerMTT from '../images/footer-mtt.png'
 
 export default function OurTeam() {
   return (
-    <div className="bg-[#B82534] pt-20 pb-10">
+    <div className="bg-[#B82534] pt-24 pb-10">
       <Leader />
       <ManagementTeam />
       <CommunityTeam />

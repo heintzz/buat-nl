@@ -2,9 +2,9 @@ import { Route, Routes } from 'react-router-dom'
 import Community from './components/Community'
 import FindIT from './components/FindIT'
 import Home from './components/Home'
-import MeetTheTeam from './components/MeetTheTeam'
 import OurTeam from './components/OurTeam'
 import WhatWeDo from './components/WhatWeDo'
+import Navbar from './components/Navbar'
 
 import NWDC from './components/NWDC'
 import NADC from './components/NADC'
@@ -18,13 +18,14 @@ import Benefits from './components/Benefits'
 function App() {
   return (
     <div className="overflow-x-hidden">
+      <Navbar />
       <Routes>
         <Route
           path="/"
           element={
             <>
+              {/* <Home /> */}
               <Home />
-              <MeetTheTeam />
               <Community />
               <WhatWeDo />
               <Benefits />

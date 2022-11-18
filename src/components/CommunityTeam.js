@@ -36,13 +36,13 @@ export default function CommunityTeam() {
           Community Team
         </h2>
         <div className="grid gap-y-16 md:grid-cols-3">
-          {firstObj.map((obj) => {
-            return <PersonalTeam {...obj} />
+          {firstObj.map((obj, idx) => {
+            return <PersonalTeam {...obj} key={idx} />
           })}
         </div>
         <div className="mt-16 md:mt-8 xl:-mt-8 grid gap-y-16 md:grid-cols-3">
-          {secondObj.map((obj) => {
-            return <PersonalTeam {...obj} />
+          {secondObj.map((obj, idx) => {
+            return <PersonalTeam {...obj} key={idx} />
           })}
         </div>
       </div>

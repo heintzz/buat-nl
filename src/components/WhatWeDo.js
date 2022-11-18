@@ -25,7 +25,7 @@ const whatWeDo = [
 ]
 export default function WhatWeDo() {
   return (
-    <>
+    <div id="what-we-do">
       <div className="bg-separator-wwd w-screen h-[100px] mt-2"></div>
       <div className="pt-10 pb-16 md:pt-36 md:pb-48 ">
         <div className="w-fit mx-auto">
@@ -44,7 +44,10 @@ export default function WhatWeDo() {
             {whatWeDo.map((event) => {
               const { name, desc } = event
               return (
-                <SwiperSlide className="flex flex-col gap-y-5 px-5 py-5">
+                <SwiperSlide
+                  className="flex flex-col gap-y-5 px-5 py-5"
+                  key={name}
+                >
                   <p className="text-3xl font-semibold tracking-wide">{name}</p>
                   <p className="text-sm sm:text-lg">{desc}</p>
                   {name === '#FIND IT 🏆' && (
@@ -63,6 +66,6 @@ export default function WhatWeDo() {
         </div>
       </div>
       <div className="bg-separator-wwd w-screen h-[100px] mt-2"></div>
-    </>
+    </div>
   )
 }

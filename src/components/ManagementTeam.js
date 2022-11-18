@@ -34,8 +34,8 @@ export default function ManagementTeam() {
           Management Team
         </h2>
         <div className="flex flex-wrap gap-y-16 gap-x-4">
-          {object.map((obj) => {
-            return <PersonalTeam {...obj} />
+          {object.map((obj, idx) => {
+            return <PersonalTeam {...obj} key={idx} />
           })}
         </div>
       </div>
@@ -44,7 +44,8 @@ export default function ManagementTeam() {
 }
 
 const additionalFlex = 'flex-wrap justify-center'
-const ornamentStyle2 = 'absolute -top-10 left-[calc(50%-133px)] -z-[10] w-[266px] h-[76px]'
+const ornamentStyle2 =
+  'absolute -top-10 left-[calc(50%-133px)] -z-[10] w-[266px] h-[76px]'
 const ornamentStyle = 'absolute -top-10 left-[calc(50%-105px)] -z-[10]'
 
 const object = [
