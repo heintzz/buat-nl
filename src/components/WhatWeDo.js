@@ -34,7 +34,7 @@ export default function WhatWeDo() {
           </h2>
           <div className="mx-auto mt-3 bg-white rounded-lg h-2 w-[50%]"></div>
         </div>
-        <div className="pt-10 pl-2 pr-8 lg:px-0">
+        <div className="pt-10 pl-2 pr-7 lg:px-0">
           <Swiper
             modules={[Navigation, Keyboard, Autoplay]}
             keyboard={{ enabled: true }}
