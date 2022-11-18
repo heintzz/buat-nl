@@ -13,15 +13,15 @@ const buttonStyle =
 const whatWeDo = [
   {
     name: '#FIND IT 🏆',
-    desc: ' FIND IT (Future Innovation and Discovery Information and Technology), merupakan sebuah event tahunan yang diselenggarakan oleh DTETI FT UGM dimana pada event ini terdapat beberapa acara diantaranya webinar dan lomba. Event ini bertujuan untuk mengembangkan dan memberi wadah bagi masyarakat yang tertarik ke dunia TI serta menarik minat sekaligus memperkenalkan TI ke masyarakat luas.',
+    desc: 'FIND IT (Future Innovation and Discovery Information and Technology), is an annual event organized by DTETI FT UGM. There are several events including webinars and competitions. This event aims to develop skills and provide a forum for IT enthusiast, also introducing IT to the wider community.',
   },
   {
     name: '#INTERNAL WORKSHOP 👨🏻‍💻',
-    desc: 'Kegiatan pelatihan dan sharing session yang diadakan oleh masing-masing komunitas untuk meningkatkan skill dan berkembang bersama. Seperti namanya, kegiatan ini hanya diadakan untuk kalangan internal Night Login saja jadi sayang banget kalau kalian ga join hehe.',
+    desc: 'Sharing sessions and training activities held by each community to improve skills and grow together. This activity is only held for internal Night Login member.',
   },
   {
     name: '#AFTER HOURS TALK🎙️',
-    desc: 'Kegiatan ini biasanya dilakukan dengan mengundang pembicara dari dunia industri. Tentunya, kami berharap dengan berada di Night Login kalian tidak hanya diasah kemampuannya saja, tetapi juga sebagai persiapan untuk berkarir di dunia industri. Berbeda dengan Internal Workshop, AHT menjembatani kalian yang berada di luar Night Login untuk dapat belajar bersama.',
+    desc: 'This activity is usually carried out by inviting speakers from the industrial world. By joining the Night Login, you will be introduced to the preparation for a career in the industrial world. Unlike the Internal Workshop, AHT bridges those of you who are outside the Night Login to be able to study together.',
   },
 ]
 export default function WhatWeDo() {
@@ -40,7 +40,7 @@ export default function WhatWeDo() {
             keyboard={{ enabled: true }}
             // autoplay={true}
             navigation
-            className="h-100 max-w-[730px] shadow-slider  border-4 border-black bg-white"
+            className="sm:h-[400px] lg:h-[450px] max-w-[730px] shadow-slider  border-4 border-black bg-white"
           >
             {whatWeDo.map((event) => {
               const { name, desc } = event
@@ -50,7 +50,7 @@ export default function WhatWeDo() {
                   key={name}
                 >
                   <p className="text-3xl font-semibold tracking-wide">{name}</p>
-                  <p className="text-sm sm:text-lg">{desc}</p>
+                  <p className="text-sm sm:text-lg lg:text-xl">{desc}</p>
                   {name === '#FIND IT 🏆' && (
                     <Link
                       to="/findit"

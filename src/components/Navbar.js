@@ -11,6 +11,13 @@ export default function Navbar() {
   const location = useLocation()
   const [hash, setHash] = useState('')
 
+  useEffect(() => {
+    setHash(location.hash)
+    if (document.querySelector('.active-nav') !== null) {
+      document.querySelector('.active-nav').classList.remove('active-nav')
+    }
+  }, [location.hash])
+
   switch (location.pathname) {
     case '/nddc':
       navColor = 'bg-[#FF7950]'
@@ -41,15 +48,6 @@ export default function Navbar() {
       textColor = 'text-black'
       break
   }
-
-  useEffect(() => {
-    setHash(location.hash)
-     if (document.querySelector('.active-nav') !== null) {
-       document.querySelector('.active-nav').classList.remove('active-nav')
-     }
-  }, [location.hash])
-
- 
 
   switch (hash) {
     case '#benefits':
